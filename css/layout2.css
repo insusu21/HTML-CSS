@@ -42,13 +42,13 @@ div.content2>div.content2grid>div.header{}
 div.content2>div.content2grid>div.header>h2{}
 div.content2>div.content2grid>div.header>p{}
 div.content2>div.content2grid>div.section{}
-div.content2>div.content2grid>div.section>article{}
-div.content2>div.content2grid>div.section>article>video{}
-div.content2>div.content2grid>div.section>article>div.texts{}
-div.content2>div.content2grid>div.section>article>div.texts>h3{}
-div.content2>div.content2grid>div.section>article>div.texts>h4{}
-div.content2>div.content2grid>div.section>article>div.texts>p{}
-div.content2>div.content2grid>div.section>article>div.texts>div.button{}
+div.content2>div.content2grid>div.section>div.article{}
+div.content2>div.content2grid>div.section>div.article>video{}
+div.content2>div.content2grid>div.section>div.article>div.texts{}
+div.content2>div.content2grid>div.section>div.article>div.texts>h3{}
+div.content2>div.content2grid>div.section>div.article>div.texts>h4{}
+div.content2>div.content2grid>div.section>div.article>div.texts>p{}
+div.content2>div.content2grid>div.section>div.article>div.texts>div.button{}
 
 /* 컨텐츠 3 */
 div.content3{}
