@@ -10,58 +10,79 @@ div.header>div.hdrgrid>h1{}
 div.header>div.hdrgrid>ul{}
 div.header>div.hdrgrid>ul>li{}
 
+
+/* 공통 
+구조가 겹치는 태그들을 전체적으로 한번씩 선택해줍니다.
+이유 : 한번에 공통적으로 스타일을 수정하기위해서*/
+
+div.content{}
+div.content>div.contentgrid{}
+div.content>div.contentgrid>div.header{}
+div.content>div.contentgrid>div.header>h2{}
+div.content>div.contentgrid>div.section{}
+div.content>div.contentgrid>div.section>div.article{
+    background-color: #0ce87e;
+}
+div.content>div.contentgrid>div.section>div.article>img{}
+div.content>div.contentgrid>div.section>div.article>texts{}
+div.content>div.contentgrid>div.section>div.article>texts>h3{}
+div.content>div.contentgrid>div.section>div.article>texts>h4{}
+div.content>div.contentgrid>div.section>div.article>texts>p{}
+
+
+
 /* 컨텐츠 1 */
-div.content1{}
-div.content1>div.content1grid{}
-div.content1>div.content1grid>div.header{}
-div.content1>div.content1grid>div.header>h2{}
-div.content1>div.content1grid>div.header>p{}
-div.content1>div.content1grid>div.section{}
-div.content1>div.content1grid>div.section>div.arttop>{}
-div.content1>div.content1grid>div.section>div.arttop>div.article{}
-div.content1>div.content1grid>div.section>div.arttop>div.article>img{}
-div.content1>div.content1grid>div.section>div.arttop>div.article>div.texts{}
-div.content1>div.content1grid>div.section>div.arttop>div.article>div.texts>h3{}
-div.content1>div.content1grid>div.section>div.arttop>div.article>div.texts>h4{}
-div.content1>div.content1grid>div.section>div.arttop>div.article>div.texts>p{}
-div.content1>div.content1grid>div.section>div.arttop>div.article>div.texts>div.icons{}
-div.content1>div.content1grid>div.section>div.arttop>div.article>div.texts>div.icons>i{}
-div.content1>div.content1grid>div.section>div.artbottom{}
-div.content1>div.content1grid>div.section>div.artbottom>div.article{}
-div.content1>div.content1grid>div.section>div.artbottom>div.article>img{}
-div.content1>div.content1grid>div.section>div.artbottom>div.article>div.texts{}
-div.content1>div.content1grid>div.section>div.artbottom>div.article>div.texts>h3{}
-div.content1>div.content1grid>div.section>div.artbottom>div.article>div.texts>p{}
-div.content1>div.content1grid>div.section>div.artbottom>div.article>div.texts>div.icons{}
-div.content1>div.content1grid>div.section>div.artbottom>div.article>div.texts>div.icons>i{}
+div.content.cnt1{}
+div.content.cnt1>div.contentgrid{}
+div.content.cnt1>div.contentgrid>div.header{}
+div.content.cnt1>div.contentgrid>div.header>h2{}
+div.content.cnt1>div.contentgrid>div.header>p{}
+div.content.cnt1>div.contentgrid>div.section{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article>img{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article>div.texts{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article>div.texts>h3{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article>div.texts>h4{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article>div.texts>p{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article>div.texts>div.icons{}
+div.content.cnt1>div.contentgrid>div.section>div.arttop>div.article>div.texts>div.icons>i{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom>div.article{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom>div.article>img{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom>div.article>div.texts{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom>div.article>div.texts>h3{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom>div.article>div.texts>p{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom>div.article>div.texts>div.icons{}
+div.content.cnt1>div.contentgrid>div.section>div.artbottom>div.article>div.texts>div.icons>i{}
 
 /* 컨텐츠 2 */
-div.content2{}
-div.content2>div.content2grid{}
-div.content2>div.content2grid>div.header{}
-div.content2>div.content2grid>div.header>h2{}
-div.content2>div.content2grid>div.header>p{}
-div.content2>div.content2grid>div.section{}
-div.content2>div.content2grid>div.section>div.article{}
-div.content2>div.content2grid>div.section>div.article>video{}
-div.content2>div.content2grid>div.section>div.article>div.texts{}
-div.content2>div.content2grid>div.section>div.article>div.texts>h3{}
-div.content2>div.content2grid>div.section>div.article>div.texts>h4{}
-div.content2>div.content2grid>div.section>div.article>div.texts>p{}
-div.content2>div.content2grid>div.section>div.article>div.texts>div.button{}
+div.content.cnt2{}
+div.content.cnt2>div.contentgrid{}
+div.content.cnt2>div.contentgrid>div.header{}
+div.content.cnt2>div.contentgrid>div.header>h2{}
+div.content.cnt2>div.contentgrid>div.header>p{}
+div.content.cnt2>div.contentgrid>div.section{}
+div.content.cnt2>div.contentgrid>div.section>div.article{}
+div.content.cnt2>div.contentgrid>div.section>div.article>video{}
+div.content.cnt2>div.contentgrid>div.section>div.article>div.texts{}
+div.content.cnt2>div.contentgrid>div.section>div.article>div.texts>h3{}
+div.content.cnt2>div.contentgrid>div.section>div.article>div.texts>h4{}
+div.content.cnt2>div.contentgrid>div.section>div.article>div.texts>p{}
+div.content.cnt2>div.contentgrid>div.section>div.article>div.texts>div.button{}
 
 /* 컨텐츠 3 */
-div.content3{}
-div.content3>div.content3grid{}
-div.content3>div.content3grid>div.header{}
-div.content3>div.content3grid>div.header>h2{}
-div.content3>div.content3grid>div.header>p{}
-div.content3>div.content3grid>div.section{}
-div.content3>div.content3grid>div.section>div.article{}
-div.content3>div.content3grid>div.section>div.article>img{}
-div.content3>div.content3grid>div.section>div.article>div.texts{}
-div.content3>div.content3grid>div.section>div.article>div.texts>h3{}
-div.content3>div.content3grid>div.section>div.article>div.texts>p{}
+div.content.cnt3{}
+div.content.cnt3>div.contentgrid{}
+div.content.cnt3>div.contentgrid>div.header{}
+div.content.cnt3>div.contentgrid>div.header>h2{}
+div.content.cnt3>div.contentgrid>div.header>p{}
+div.content.cnt3>div.contentgrid>div.section{}
+div.content.cnt3>div.contentgrid>div.section>div.article{}
+div.content.cnt3>div.contentgrid>div.section>div.article>img{}
+div.content.cnt3>div.contentgrid>div.section>div.article>div.texts{}
+div.content.cnt3>div.contentgrid>div.section>div.article>div.texts>h3{}
+div.content.cnt3>div.contentgrid>div.section>div.article>div.texts>p{}
 
 /* 푸터 */
 div.footer{}
