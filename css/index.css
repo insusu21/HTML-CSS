@@ -13,19 +13,27 @@ div.hdrTopWrap>div.hdrTop{
     color: #fff;
     overflow: hidden;
 }
+/* margin-left가 움직였었다? */
+/* move라는 애니메이션 함수를 불러와야겠죠? */
 div.hdrTopWrap>div.hdrTop>i{
     display: block;
+    /* 애니메이션 */
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: move 5s linear infinite ;
+    animation:move 8s linear infinite; 
 }
-/* 애니메이션 만드는애 */
-/* 작업시간이 n%일때 어떤 css를 보여주는지를 설정할 수 있다. */
+
+/* 애니메이션을 만드는 애  */
+/*  작업시간이 n%일때, 어떤 css를 보여주는지를 설정할 수 있어요 */
 /* 애니메이션 이름 : move */
 @keyframes move {
+    /* 시작할때 */
     0%{
+        /* 해당 선택자에 적용할 속성 */
         margin-left: 0%;
     }
+    /* 완료됐을때 */
     100%{
+        /* 해당 선택자에 적용할 속성 */
         margin-left: 120%;
     }
 }
@@ -53,7 +61,9 @@ div.headerWrap>div.header>ul{
     column-gap: 10px;
     font-size: 20px;
 }
-div.headerWrap>div.header>ul>li{}
+div.headerWrap>div.header>ul>li:nth-of-type(4){
+    display: none;
+}
 
 /* 컨텐츠 공통 */
 div.cntWrap{
@@ -127,11 +137,11 @@ div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image{
     height: 320px;
 }
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i1{
-background-image: url(../images/Mask\ group-3.png);    
-} 
+    background-image: url('../images/Mask group-1.png');
+}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.image.i2{
-    background-image: url(../images/Mask\ group-2.png); 
-} 
+    background-image: url('../images/Mask group-2.png');
+}
 div.cntWrap>div.content.cnt01>div.section>div.artTop>div.article>div.texts{
     padding-left: calc(100% / 6 * 0.7);
     padding-right: calc(100% / 6 * 2);
@@ -153,15 +163,16 @@ div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article{}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image{
     height: 320px;
 }
+div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i1{
+    background-image: url('../images/Mask group-3.png');
+}
+div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i2{
+     background-image: url('../images/Mask group-4.png');
+}
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i3{
-    background-image: url(../images/Mask\ group-1.png);
+     background-image: url('../images/Mask group-5.png');
 }
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i4{
-    background-image: url(../images/Mask\ group-4.png);
-}
-div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.image.i5{
-    background-image: url(../images/Mask\ group.png);
-}
+
 div.cntWrap>div.content.cnt01>div.section>div.artBtm>div.article>div.texts{
     padding-left: 23px;
     padding-right: 23px;
@@ -198,7 +209,7 @@ div.cntWrap>div.content.cnt02>div.section{
 }
 div.cntWrap>div.content.cnt02>div.section>div.article{
     display: flex;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
     width: 50%;
@@ -207,13 +218,12 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.image{
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.image>video{
     height: 100%;
-    margin-left: -20%;
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
-    text-align: center;
     width: 50%;
     background-color: #fff;
-    padding: 80px calc(100%/12);
+    padding: 80px calc(100% / 12);
+    text-align: center;
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{}
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>p{
@@ -225,14 +235,14 @@ div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.button{
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    width: calc(100% - 40px);
+    width:calc(100% - 40px);
     margin: 0 auto;
     border-radius: 20px;
     cursor: pointer;
     margin-top: 20px;
 }
 div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>div.button:hover{
-    background-color: #f0f;
+    background-color: cadetblue;
 }
 /* 컨텐츠3 */
 div.cntWrap>div.content.cnt03{}
@@ -255,17 +265,17 @@ div.cntWrap>div.content.cnt03>div.section>div.article:hover>div.texts{
 div.cntWrap>div.content.cnt03>div.section>div.article>div.image{
     height: 200px;
 }
-div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i6{
-    background-image: url(../images/Mask\ group-5.png);
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i1{
+    background-image: url('..//images/Mask group-6.png');
 }
-div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i7{
-    background-image: url(../images/Mask\ group-6.png);
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i2{
+    background-image: url('..//images/Mask group-7.png');
 }
-div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i8{
-    background-image: url(../images/Mask\ group-7.png);
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i3{
+    background-image: url('..//images/Mask group-8.png');
 }
-div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i9{
-    background-image: url(../images/Mask\ group-8.png);
+div.cntWrap>div.content.cnt03>div.section>div.article>div.image.i4{
+    background-image: url('../images/Mask group.png');
 }
 div.cntWrap>div.content.cnt03>div.section>div.article>div.texts{
     transition: all 0.5s;
@@ -279,8 +289,8 @@ div.cntWrap>div.content.cnt03>div.section>div.article>div.texts>p{}
 
 /* footer */
 div.ftrWrap{
-    margin-top: 80px;
     background-color: #a31f30;
+    margin-top: 80px;
     padding-top: 40px;
     padding-bottom: 80px;
 }
@@ -298,7 +308,7 @@ div.ftrWrap>div.footer>h4{
     text-transform: capitalize;
 }
 div.ftrWrap>div.footer>p{
-    width: calc(100%/12*8);
+    width: calc(100% / 12 * 8);
     margin: 0 auto;
     height: 40px;
     line-height: 20px;
@@ -309,12 +319,6 @@ div.ftrWrap>div.footer>div.sns{
     font-size: 45px;
 }
 div.ftrWrap>div.footer>div.sns>i{}
-
-
-
-
-
-
 
 /* 태블릿 기준으로 1024px의 미디어 쿼리 생성 */
 @media screen and (max-width:1024px){
@@ -420,4 +424,4 @@ div.ftrWrap>div.footer>div.sns>i{}
         display: block;
         font-size: 30px;
     }
-}
+} 
